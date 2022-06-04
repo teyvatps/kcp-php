@@ -110,8 +110,8 @@ class KCP
     private bool $nocwnd;
 
     public function __construct(
-        private readonly int $conv, // Conversation ID
-        private readonly int $token, // User token
+        private int $conv, // Conversation ID
+        private int $token, // User token
         private \Closure $output, //Output
         private bool $stream = false // Enable streamer mode
     )
@@ -776,5 +776,15 @@ class KCP
     public function isDeadLink(): bool
     {
         return $this->state !== 0;
+    }
+
+    public function getConv(): int
+    {
+        return $this->conv;
+    }
+
+    public function getToken(): int
+    {
+        return $this->token;
     }
 }
