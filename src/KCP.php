@@ -112,7 +112,7 @@ class KCP
     public function __construct(
         private int $conv, // Conversation ID
         private int $token, // User token
-        private \Closure $output, //Output
+        private $output, //Output
         private bool $stream = false // Enable streamer mode
     )
     {
