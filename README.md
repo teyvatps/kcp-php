@@ -1,6 +1,6 @@
 # kcp-php
 
-archived for performance issue
+archived due to performance issue
 
 ⚡ kcp-php - a (not sure) fast and reliable ARQ protocol
 
